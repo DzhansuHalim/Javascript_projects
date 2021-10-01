@@ -8,6 +8,6 @@ btns.forEach(function(btn){
 
         const question = e.currentTarget.parentElement.parentElement;
         question.classList.toggle("show-text");
-        
-    })
+
+    });
 });
