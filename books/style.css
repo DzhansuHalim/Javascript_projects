@@ -1,0 +1,29 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.boek{
+    padding: 1em;
+    clear: left;
+}
+
+.boek_cover{
+    float: left;
+    padding: 0 3rem 0 0;
+    max-width: 300px;
+}
+
+.boek_kopje{
+    margin-top: 0;
+    color: rgb(155, 166, 216);
+    font-size: 1.5em;
+}
+
+.boek_paginas::after, .boek_uitgave::after, .boek_ean::after{
+    content: " | ";
+}
+
+.boek_prijs{
+    font-size: 2em;
+    color: rgb(155, 166, 216);
+}
