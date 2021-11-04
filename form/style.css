@@ -170,7 +170,7 @@ input:focus{
   margin-bottom: 2em;
 }
 
-.show1, .show2, .show3{
+.show1, .show2, .show3, .show4{
   margin-left: 0.5em;
 }
 
@@ -185,11 +185,11 @@ input:focus{
 
 } 
 
-.errorIcon, .description1, .description2, .description3{
+.errorIcon, .description1, .description2, .description3, .description4{
   color: red;
 }
 
-.description1, .description2, .description3{
+.description1, .description2, .description3, .description4{
   font-size: 12px;
   text-align: right;
   margin-right: 2em;

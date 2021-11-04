@@ -8,16 +8,24 @@
     const name = registerF.name;
     const email = registerForm.email;
     const password = registerForm.password;
+    const date = registerForm.date;
     const submit = registerF.submitBut;
 
   
     const show1 = document.querySelector('.show1');
     const show2 = document.querySelector('.show2');
     const show3 = document.querySelector('.show3');
+    const show4 = document.querySelector('.show4');
     const description1 = document.querySelector('.description1');
     const description2 = document.querySelector('.description2');
     const description3 = document.querySelector('.description3');
-    let html = "";            
+    const description4 = document.querySelector('.description4');
+    let html = "";  
+ 
+    var today = new Date();
+    var givenDate = new Date(`${date.value}` );
+  
+
 
 
 
@@ -95,9 +103,24 @@
           
         }
 
+        //date of birth-------------
+        if(date.value === null ||date.value === "" ){
+            checkerror(date, show4);
+            description4.innerHTML = "Date is required field.";
+        }
+        else{
+            checkcorrect(date, show4);
+            description4.innerHTML = ""
+
+            if(givenDate > today){
+                console.log("false");
+            }
+            else{
+                console.log(givenDate);
+            }
+        }
+
     };
-
-
 
 
     function checkerror(lableName, showIcon){
